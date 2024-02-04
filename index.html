@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Sorteador de Nomes</title>
+    
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <main>
+        <h1>Sorteador de Nomes</h1>
+        <form id="form-sorteador">
+            <div id="nomes-container">
+                <label for="nomes">Nomes</label>
+                <select id="nomes" required>
+                    <option value="Karol">Karol</option>
+                    <option value="Marcos Vinicius">Marcos Vinicius</option>
+                    <option value="Marcos Silva">Marcos Silva</option>
+                    <option value="Vanessa">Vanessa</option>
+                </select>
+            </div>
+            <button type="button" onclick="sortearNome()">Sortear nome</button>
+        </form>
+        <div class="resultado" id="resultado-container">
+            O nome sorteado foi: <span id="resultado-valor"></span>
+            <button type="button" onclick="recarregarPagina()">Ok</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
